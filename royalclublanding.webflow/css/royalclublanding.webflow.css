@@ -76,7 +76,8 @@
 }
 
 .section.destination {
-  margin-top: 8em;
+  margin-top: 12em;
+  margin-bottom: 4em;
 }
 
 .section.dark--bg {
@@ -415,6 +416,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 12em;
   margin-top: 0em;
   padding-top: 1.25em;
   padding-bottom: 1.25em;
@@ -501,6 +503,10 @@
   text-transform: uppercase;
 }
 
+.heading__20px.white.nopad {
+  padding-right: 0em;
+}
+
 .heading__20px.left--aligned {
   padding-right: 0em;
   text-align: right;
@@ -542,6 +548,7 @@
 .heading__60px {
   margin-top: 0px;
   margin-bottom: 0px;
+  font-family: 'Cormorant Garamond', sans-serif;
   color: #9f8054;
   font-size: 3.13em;
   line-height: 1.2;
@@ -1062,24 +1069,16 @@
 }
 
 .tab--content__container {
+  position: relative;
   width: 12.86em;
-  margin-right: 1.67em;
+  margin-right: 1.27em;
+  margin-left: 1.27em;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-transition: -webkit-transform 475ms cubic-bezier(.445, .05, .55, .95);
-  transition: -webkit-transform 475ms cubic-bezier(.445, .05, .55, .95);
-  transition: transform 475ms cubic-bezier(.445, .05, .55, .95);
-  transition: transform 475ms cubic-bezier(.445, .05, .55, .95), -webkit-transform 475ms cubic-bezier(.445, .05, .55, .95);
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
-}
-
-.tab--content__container:hover {
-  -webkit-transform: translate(0px, -10%);
-  -ms-transform: translate(0px, -10%);
-  transform: translate(0px, -10%);
 }
 
 .tab--content__container.hide {
@@ -1087,6 +1086,7 @@
 }
 
 .slide {
+  position: relative;
   width: 12.86em;
   height: 28.18em;
   background-image: url('../images/Squash---2-Courts.jpg');
@@ -1138,6 +1138,7 @@
 }
 
 .slide.drivingrange {
+  position: relative;
   background-image: url('../images/Driving-Range.jpg');
   background-position: 100% 100%;
 }
@@ -1217,10 +1218,10 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c-arrow {
@@ -2768,6 +2769,69 @@
   box-shadow: 1px 1px 40px 0 rgba(0, 0, 0, 0.2);
 }
 
+.hover--behind--new {
+  position: absolute;
+  left: -30%;
+  top: -12.5%;
+  right: 0%;
+  bottom: 0%;
+  z-index: -1;
+  display: none;
+  width: 21.04em;
+  height: 35.31em;
+  border-style: solid;
+  border-width: 25px;
+  border-color: #f3e4ce;
+}
+
+.headding--know_more {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Cormorant Garamond', sans-serif;
+  color: #c19a5b;
+  font-size: 2.5em;
+  line-height: 0.9;
+  font-weight: 400;
+  text-align: center;
+}
+
+.know--more {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 4%;
+  display: none;
+  text-align: center;
+}
+
+.image-2 {
+  width: 2em;
+}
+
+.parallax--container {
+  position: relative;
+}
+
+.parra--brown {
+  position: static;
+  width: 30em;
+}
+
+.parra--pattern {
+  position: absolute;
+  left: 4%;
+  top: 10%;
+  width: 50em;
+}
+
+.parra--image--about {
+  position: absolute;
+  left: 20%;
+  top: -10%;
+  width: 30em;
+}
+
 @media screen and (max-width: 991px) {
   .btn--primary.payment {
     border-width: 1px;
@@ -3056,6 +3120,10 @@
     right: 1em;
     width: 30em;
     height: 36em;
+  }
+
+  .brown__card._2 {
+    right: 0%;
   }
 
   .card__grid {
@@ -3353,6 +3421,19 @@
     -ms-flex-align: center;
     align-items: center;
     background-color: #ebcfa7;
+  }
+
+  .parra--brown {
+    display: none;
+  }
+
+  .parra--pattern {
+    display: none;
+  }
+
+  .parra--image--about {
+    position: static;
+    display: block;
   }
 }
 
