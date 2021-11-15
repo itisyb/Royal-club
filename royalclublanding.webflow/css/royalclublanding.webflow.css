@@ -40,6 +40,7 @@
 }
 
 .section.hero.flex {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -53,6 +54,10 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  background-image: none;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: scroll;
 }
 
 .section.background {
@@ -61,7 +66,7 @@
 }
 
 .section.walkthrough {
-  background-image: url('../images/2nd-option_3.png');
+  background-image: url('../images/banner-.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -103,6 +108,8 @@
 }
 
 .container {
+  position: relative;
+  z-index: 1;
   width: 100%;
   max-width: 1920px;
   margin-right: auto;
@@ -1373,10 +1380,10 @@
 
 .splide__slide {
   width: 20%;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .splide__slide.five-cards {
@@ -2310,6 +2317,7 @@
   top: 0%;
   right: 0%;
   bottom: auto;
+  z-index: 223;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2562,8 +2570,10 @@
 }
 
 .custom__tabs--content {
+  overflow: hidden;
   width: 100%;
-  margin-top: 8.65em;
+  margin-top: 4em;
+  padding-top: 8.65em;
 }
 
 .tab--pannel {
@@ -2576,7 +2586,7 @@
 
 .tab--pannel.current {
   display: block;
-  overflow: hidden;
+  overflow: visible;
   opacity: 1;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -2841,6 +2851,17 @@
   width: 30em;
 }
 
+.background-video {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  height: 54em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
 @media screen and (max-width: 991px) {
   .btn--primary.payment {
     border-width: 1px;
@@ -3009,6 +3030,10 @@
   .section.hero.flex {
     height: 70em;
     padding-top: 20em;
+    background-image: url('../images/Group-1269.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
   }
 
   .container {
@@ -3347,6 +3372,7 @@
   }
 
   .navigation {
+    z-index: 2;
     padding-right: 2em;
     padding-left: 2em;
     -webkit-box-orient: vertical;
@@ -3443,6 +3469,10 @@
   .parra--image--about {
     position: static;
     display: block;
+  }
+
+  .background-video {
+    display: none;
   }
 }
 
@@ -4126,6 +4156,10 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .navigation {
+    z-index: 2;
   }
 
   .contact__details.nopad {
