@@ -814,13 +814,14 @@
 }
 
 .single--amenities {
+  position: relative;
   max-width: 11.93em;
   text-align: center;
 }
 
 .image--icon {
-  max-height: 4.7em;
-  min-height: 4.7em;
+  max-height: 4em;
+  min-height: 4em;
   min-width: 0px;
   background-image: url('../images/Group-1292.svg');
   background-position: 50% 50%;
@@ -2860,6 +2861,33 @@
   height: 54em;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.bg--circle {
+  position: absolute;
+  left: 30%;
+  z-index: -1;
+  display: none;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background-color: #ebcfa7;
+}
+
+.bg--circle.wifi {
+  left: 34%;
+}
+
+.bg--circle.personal {
+  left: 34%;
+}
+
+.bg--circle.pet {
+  left: 33%;
+}
+
+.bg--circle.custom {
+  left: 33%;
 }
 
 @media screen and (max-width: 991px) {

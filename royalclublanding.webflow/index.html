@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Mon Nov 15 2021 13:44:49 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Mon Nov 15 2021 16:12:03 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="618e762a8de97073775e0260" data-wf-site="618a285a46c2d34d44a5a58e">
 <head>
   <meta charset="utf-8">
@@ -843,30 +843,35 @@ body.noscroll{
       </div>
       <div data-w-id="ef7fe82f-63fa-b927-df1a-afab1d375b55" style="opacity:0;-webkit-transform:translate3d(20%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(20%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(20%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(20%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="wrapper--amenities">
         <div class="single--amenities">
-          <div class="image--icon valet"></div>
+          <div class="bg--circle park"></div>
+          <div class="image--icon"></div>
           <h1 class="heading__24px semibold">Valet Parking</h1>
           <h1 class="heading__18px black">Leave your parking and car maintenance needs to our valet staff.</h1>
         </div>
         <div class="line vertical"></div>
         <div id="w-node-_7b695653-52e3-b448-ef38-1219cf209012-775e0260" class="single--amenities">
+          <div class="bg--circle wifi"></div>
           <div class="image--icon wifi"></div>
           <h1 class="heading__24px semibold">Free WiFi</h1>
           <h1 class="heading__18px black">Stay connected with the latest happenings of your world at all times.</h1>
         </div>
         <div class="line vertical"></div>
         <div class="single--amenities">
+          <div class="bg--circle pet"></div>
           <div class="image--icon drop"></div>
           <h1 class="heading__24px semibold">Pet Grooming</h1>
           <h1 class="heading__18px black">Pamper your furry friends with a relaxing spa &amp; grooming session at our pet grooming centre.</h1>
         </div>
         <div class="line vertical"></div>
         <div class="single--amenities">
+          <div class="bg--circle personal"></div>
           <div class="image--icon plate"></div>
           <h1 class="heading__24px semibold">Personal concierge</h1>
           <h1 class="heading__18px black">Create unique and personalised experiences with our Private Concierge services.</h1>
         </div>
         <div class="line vertical"></div>
         <div class="single--amenities">
+          <div class="bg--circle custom"></div>
           <div class="image--icon guy"></div>
           <h1 class="heading__24px semibold">Custom Gourmet Experience</h1>
           <h1 class="heading__18px black">Relish the exotic recipes customised to meet your palate by our master chefs.</h1>
@@ -1170,9 +1175,9 @@ let splides = $('.slider2');
 for ( let i = 0, splideLength = splides.length; i < splideLength; i++ ) {
 	new Splide( splides[ i ], {
   // Desktop on down
-	perPage: 6,
+	perPage: 5,
 	perMove: 1,
-  focus: 'center', // 0 = left and 'center' = center
+  focus: 'left', // 0 = left and 'center' = center
   type: 'loop', // 'loop' or 'slide'
   gap: '1.2em', // space between slides
   arrows: 'slider', // 'slider' or false
